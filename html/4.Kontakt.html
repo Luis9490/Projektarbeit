@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Webseite</title>
+    <title>Kontakt</title>
     <link rel="stylesheet" href="../css/start.css" />
   </head>
   <body>
@@ -27,13 +27,29 @@
 
     <h1>Kontakt</h1>
     <h4>Kontaktformular</h4>
-    <h6>Name:</h6>
-    <h6>E-Mail:</h6>
-    <h6>Nachricht:</h6>
-    <h6>
-      E-Mail: luis.strunk@edu.gbssg.ch<br />
-      Telefon: +423 797 12 04
-    </h6>
+
+    <div class="container">
+      <form action="action_page.php">
+        <label for="Name"><h6>Name:</h6></label>
+        <input type="text" id="Name" name="Name" placeholder="Name, Nachname" />
+
+        <label for="E-Mail"><h6>E-Mail:</h6></label>
+        <input type="text" id="E-Mail" name="E-Mail" placeholder="E-Mail" />
+
+        <label for="Nachricht"><h6>Nachricht:</h6></label>
+        <textarea
+          id="Nachricht"
+          name="Nachricht"
+          placeholder="..."
+          style="height: 200px"
+        ></textarea>
+      </form>
+      <input type="submit" value="Absenden" />
+      <h6>
+        E-Mail: luis.strunk@edu.gbssg.ch<br />
+        Telefon: +423 797 12 04
+      </h6>
+    </div>
 
     <div>
       <h4>Kontaktdaten:</h4>
