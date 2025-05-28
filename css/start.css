@@ -90,34 +90,43 @@ body {
 /* ------------------------------------------------------Portfolio------------------------------------------------------ */
 
 .PortfolioArbeit {
-  .EpoxText {
-    float: left;
+  .Beschreibung {
+    margin-bottom: 50%;
   }
+
+  .EpoxText,
   .MPText {
-    float: left;
+    width: 80%; /* Text nimmt 80% der Containerbreite ein */
+    text-align: left; /* Text linksbündig */
   }
+
   h4 {
     margin-left: 10%;
     text-align: left;
   }
   .PortfolioInhalt {
     display: flex;
-    align-items: center;
-    margin-right: 10%;
-    margin-left: 10%;
-    margin-bottom: 5%;
-    margin-top: 3%;
+    flex-direction: column; /* stapelt Text und Bild/Video untereinander */
+    align-items: center; /* zentriert alles horizontal */
+    gap: 1rem; /* Abstand zwischen Text und Bild/Video */
+    margin: 3% 10% 5% 10%;
   }
 }
 
 .PortfolioPNG {
+  max-width: 100%; /* Bild/Video passt sich Containerbreite an */
+  height: auto;
+  display: block;
+  margin: 0 auto; /* zentriert das Bild/Video */
   box-shadow: -10px 10px rgba(42, 192, 75, 0.5);
 }
 
 .PortfolioMP4 {
   video {
-    width: 80%;
+    max-width: 300px; /* Bild/Video passt sich Containerbreite an */
     height: auto;
+    display: block;
+    margin: 0 auto; /* zentriert das Bild/Video */
     box-shadow: -10px 10px rgba(42, 192, 75, 0.5);
   }
 }
