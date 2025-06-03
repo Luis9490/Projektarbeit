@@ -25,10 +25,10 @@ body {
   position: fixed;
   width: 100%;
   top: 0%;
-  a {
+  .NavigationItem {
     color: black;
     text-decoration: none;
-    h2 {
+    .navH2 {
       margin: 3%;
     }
     white-space: nowrap;
@@ -66,34 +66,28 @@ body {
 
 /* ------------------------------------------------------Fähigkeiten------------------------------------------------------ */
 
-.faegihkeiten {
-  > h1 {
-    margin-bottom: 1%;
-  }
-  > p {
-    font-weight: bold;
-    margin-top: 0%;
-  }
+.FaehigkeitenH1 {
+  margin-bottom: 1%;
+}
+.FaehigkeitenINTROtext {
+  font-weight: bold;
+  margin-top: 0%;
+}
 
-  div {
-    background-color: #1b7c3080;
-    margin: 7%;
-    padding: 1%;
-    margin-top: 6%;
-    p {
-      margin-top: 0%;
-    }
-    h4 {
-      margin-bottom: 0%;
-    }
-  }
+.faehighkeiten {
+  background-color: #1b7c3080;
+  margin: 7%;
+  padding: 1%;
+  margin-top: 6%;
+}
+.faehigkeitenTEXT {
+  margin-top: 0%;
+}
+.faehigkeit {
+  margin-bottom: 0%;
 }
 
 /* ------------------------------------------------------Portfolio------------------------------------------------------ */
-
-.Beschreibung {
-  margin-bottom: 50%;
-}
 
 .EpoxText,
 .MPText {
@@ -101,7 +95,7 @@ body {
   text-align: left; /* Text linksbündig */
 }
 
-h4 {
+.Projekttitel {
   margin-left: 10%;
   text-align: left;
 }
@@ -135,7 +129,7 @@ video {
   font-weight: lighter;
 }
 
-h4 {
+.KontaktformularH4 {
   font-weight: lighter;
 }
 
