@@ -13,6 +13,19 @@ body {
 
 .NavigationItem {
   font-family: "Times New Roman", Times, serif;
+  color: black;
+  text-decoration: none;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.NavigationItem:hover {
+  border-bottom: 2px solid #fff; /* Hover-Unterstrich */
+}
+
+.NavigationItem.active {
+  border-bottom: 2px solid white; /* Unterstrich für aktive Seite */
 }
 
 .Navigation {
@@ -20,17 +33,13 @@ body {
   font-size: large;
   background-color: #1b7c30;
   display: flex;
-  justify-content: center;
-  justify-content: space-around;
+  justify-content: space-around; /* Korrigiert: nicht doppelt */
   position: fixed;
   width: 100%;
   top: 0%;
   white-space: nowrap;
 }
-.NavigationItem {
-  color: black;
-  text-decoration: none;
-}
+
 .navH2 {
   margin: 3%;
 }
