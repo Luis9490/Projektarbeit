@@ -13,6 +13,8 @@ body {
   border: 1rem solid #2ac04b;
 }
 
+/* Media Querrys */
+
 /* Für Smartphones */
 @media screen and (max-width: 600px) {
   .portrait,
