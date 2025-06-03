@@ -1,0 +1,211 @@
+/* ------------------------------------------------------Allgemein------------------------------------------------------ */
+html {
+  background-color: #edebeb;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+  padding-top: 40px;
+}
+
+/* ------------------------------------------------------Navigation------------------------------------------------------ */
+
+.NavigationItem {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.Navigation {
+  overflow-x: hidden;
+  font-size: large;
+  background-color: #1b7c30;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  position: fixed;
+  width: 100%;
+  top: 0%;
+  a {
+    color: black;
+    text-decoration: none;
+    h2 {
+      margin: 3%;
+    }
+    white-space: nowrap;
+  }
+}
+
+/* ------------------------------------------------------Über mich------------------------------------------------------ */
+
+.ueber-mich {
+  div {
+    padding: 0%;
+    .portrait {
+      border: 1rem solid #2ac04b;
+      width: 336px;
+      height: 448px;
+    }
+  }
+
+  .biografie {
+    margin: 0 10%;
+
+    h4 {
+      font-weight: normal;
+      margin: 0;
+    }
+    text-align: left;
+
+    p {
+      background-color: #239e3e;
+      padding: 5% 3%;
+      margin-top: 0;
+    }
+  }
+}
+
+/* ------------------------------------------------------Fähigkeiten------------------------------------------------------ */
+
+.faegihkeiten {
+  > h1 {
+    margin-bottom: 1%;
+  }
+  > p {
+    font-weight: bold;
+    margin-top: 0%;
+  }
+
+  div {
+    background-color: #1b7c3080;
+    margin: 7%;
+    padding: 1%;
+    margin-top: 6%;
+    p {
+      margin-top: 0%;
+    }
+    h4 {
+      margin-bottom: 0%;
+    }
+  }
+}
+
+/* ------------------------------------------------------Portfolio------------------------------------------------------ */
+
+.PortfolioArbeit {
+  .Beschreibung {
+    margin-bottom: 50%;
+  }
+
+  .EpoxText,
+  .MPText {
+    width: 80%; /* Text nimmt 80% der Containerbreite ein */
+    text-align: left; /* Text linksbündig */
+  }
+
+  h4 {
+    margin-left: 10%;
+    text-align: left;
+  }
+  .PortfolioInhalt {
+    display: flex;
+    flex-direction: column; /* stapelt Text und Bild/Video untereinander */
+    align-items: center; /* zentriert alles horizontal */
+    gap: 1rem; /* Abstand zwischen Text und Bild/Video */
+    margin: 3% 10% 5% 10%;
+  }
+}
+
+.PortfolioPNG {
+  max-width: 100%; /* Bild/Video passt sich Containerbreite an */
+  height: auto;
+  display: block;
+  margin: 0 auto; /* zentriert das Bild/Video */
+  box-shadow: -10px 10px rgba(42, 192, 75, 0.5);
+}
+
+.PortfolioMP4 {
+  video {
+    max-width: 300px; /* Bild/Video passt sich Containerbreite an */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* zentriert das Bild/Video */
+    box-shadow: -10px 10px rgba(42, 192, 75, 0.5);
+  }
+}
+
+/* ------------------------------------------------------Kontakt------------------------------------------------------ */
+
+.Kontaktbeschreibung {
+  font-weight: lighter;
+}
+
+.container {
+  h4 {
+    font-weight: lighter;
+  }
+}
+
+input[type="text"],
+select,
+textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 40%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  width: 40%;
+  background-color: #000000;
+  color: white;
+  padding: 1% 2%;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* ------------------------------------------------------Footer------------------------------------------------------ */
+
+.FooterBoxAussen {
+  padding-bottom: 2%;
+  padding-top: 1%;
+  padding-right: 2%;
+  padding-left: 2%;
+  background-color: #239e3e;
+
+  .FooterBoxInnen {
+    background-color: #2ac04b;
+
+    .Kontaktdaten {
+      font-weight: lighter;
+      display: inline;
+      font-family: "Times New Roman", Times, serif;
+    }
+    .AbstandZ1,
+    .AbstandZ2,
+    .AbstandZ3 {
+      word-spacing: 80px;
+      display: inline;
+    }
+  }
+
+  .FooterTitel {
+    margin-right: 100%;
+    margin-bottom: 0%;
+  }
+}
+
+.trennlinie {
+  border-top: 3px solid #000000;
+  margin-top: 10px;
+  padding-top: 10px;
+}
