@@ -50,17 +50,17 @@ body {
   .biografie {
     margin: 0 10%;
 
-    h4 {
-      font-weight: normal;
-      margin: 0;
-    }
     text-align: left;
+  }
+  .Biografie_h4 {
+    font-weight: normal;
+    margin: 0;
+  }
 
-    p {
-      background-color: #239e3e;
-      padding: 5% 3%;
-      margin-top: 0;
-    }
+  .Biografie_Text {
+    background-color: #239e3e;
+    padding: 5% 3%;
+    margin-top: 0;
   }
 }
 
@@ -91,28 +91,26 @@ body {
 
 /* ------------------------------------------------------Portfolio------------------------------------------------------ */
 
-.PortfolioArbeit {
-  .Beschreibung {
-    margin-bottom: 50%;
-  }
+.Beschreibung {
+  margin-bottom: 50%;
+}
 
-  .EpoxText,
-  .MPText {
-    width: 80%; /* Text nimmt 80% der Containerbreite ein */
-    text-align: left; /* Text linksbündig */
-  }
+.EpoxText,
+.MPText {
+  width: 80%; /* Text nimmt 80% der Containerbreite ein */
+  text-align: left; /* Text linksbündig */
+}
 
-  h4 {
-    margin-left: 10%;
-    text-align: left;
-  }
-  .PortfolioInhalt {
-    display: flex;
-    flex-direction: column; /* stapelt Text und Bild/Video untereinander */
-    align-items: center; /* zentriert alles horizontal */
-    gap: 1rem; /* Abstand zwischen Text und Bild/Video */
-    margin: 3% 10% 5% 10%;
-  }
+h4 {
+  margin-left: 10%;
+  text-align: left;
+}
+.PortfolioInhalt {
+  display: flex;
+  flex-direction: column; /* stapelt Text und Bild/Video untereinander */
+  align-items: center; /* zentriert alles horizontal */
+  gap: 1rem; /* Abstand zwischen Text und Bild/Video */
+  margin: 3% 10% 5% 10%;
 }
 
 .PortfolioPNG {
@@ -123,14 +121,12 @@ body {
   box-shadow: -10px 10px rgba(42, 192, 75, 0.5);
 }
 
-.PortfolioMP4 {
-  video {
-    max-width: 300px; /* Bild/Video passt sich Containerbreite an */
-    height: auto;
-    display: block;
-    margin: 0 auto; /* zentriert das Bild/Video */
-    box-shadow: -10px 10px rgba(42, 192, 75, 0.5);
-  }
+video {
+  max-width: 300px; /* Bild/Video passt sich Containerbreite an */
+  height: auto;
+  display: block;
+  margin: 0 auto; /* zentriert das Bild/Video */
+  box-shadow: -10px 10px rgba(42, 192, 75, 0.5);
 }
 
 /* ------------------------------------------------------Kontakt------------------------------------------------------ */
@@ -139,10 +135,8 @@ body {
   font-weight: lighter;
 }
 
-.container {
-  h4 {
-    font-weight: lighter;
-  }
+h4 {
+  font-weight: lighter;
 }
 
 input[type="text"],
@@ -180,17 +174,16 @@ input[type="submit"]:hover {
   padding: 20px;
   background-color: #239e3e;
 }
-  .FooterBoxInnen {
-    background-color: #2ac04b;
-    
-    width: 100%;
-    text-align: left;
-  }
-    .Kontaktdaten {
-      margin: 0;
-      font-weight: bold;
-    }
+.FooterBoxInnen {
+  background-color: #2ac04b;
 
+  width: 100%;
+  text-align: left;
+}
+.Kontaktdaten {
+  margin: 0;
+  font-weight: bold;
+}
 
 .KontaktListe {
   display: flex;
@@ -203,10 +196,8 @@ input[type="submit"]:hover {
   justify-content: center;
 }
 
-
 .Label {
   font-weight: bold;
- 
 }
 
 .Wert a {
@@ -214,14 +205,13 @@ input[type="submit"]:hover {
   color: inherit;
 }
 
+.FooterTitel {
+  text-align: center;
+  margin-bottom: 10px;
+}
 
-  .FooterTitel {
-    text-align: center;
-    margin-bottom: 10px;
-  }
-
-  .trennlinie {
-    border-top: 3px solid #000000;
-    margin-top: 10px;
-    padding-top: 10px;
-  }
+.trennlinie {
+  border-top: 3px solid #000000;
+  margin-top: 10px;
+  padding-top: 10px;
+}
