@@ -21,11 +21,11 @@ body {
 }
 
 .NavigationItem:hover {
-  border-bottom: 2px solid black; /* Hover-Unterstrich */
+  border-bottom: 2px solid #fff;
 }
 
 .NavigationItem.active {
-  border-bottom: 2px solid black; /* Unterstrich für aktive Seite */
+  border-bottom: 2px solid white;
 }
 
 .Navigation {
@@ -33,7 +33,7 @@ body {
   font-size: large;
   background-color: #1b7c30;
   display: flex;
-  justify-content: space-around; /* Korrigiert: nicht doppelt */
+  justify-content: space-around;
   position: fixed;
   width: 100%;
   top: 0%;
