@@ -9,6 +9,44 @@ body {
   padding-top: 40px;
 }
 
+.portrait {
+  border: 1rem solid #2ac04b;
+}
+
+/* Für Smartphones */
+@media screen and (max-width: 600px) {
+  .portrait,
+  .PortfolioPNG,
+  video {
+    width: 90%;
+    height: auto;
+  }
+}
+
+/* Für Tablets */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .portrait,
+  .PortfolioPNG,
+  video {
+    width: 80%;
+    height: auto;
+  }
+}
+
+/* Für grosse Bildschirme */
+@media screen and (min-width: 1025px) {
+  .portrait {
+    width: 336px;
+    height: 448px;
+  }
+
+  .PortfolioPNG,
+  video {
+    max-width: 600px;
+    height: auto;
+  }
+}
+
 /* ------------------------------------------------------Navigation------------------------------------------------------ */
 
 .NavigationItem {
@@ -21,11 +59,13 @@ body {
 }
 
 .NavigationItem:hover {
-  border-bottom: 2px solid #fff;
+  border: 2px solid black;
+  padding-right: 10px;
 }
 
 .NavigationItem.active {
-  border-bottom: 2px solid white;
+  text-decoration: underline;
+  text-decoration-color: #000000;
 }
 
 .Navigation {
@@ -48,11 +88,11 @@ body {
 
 div {
   padding: 0%;
-  .portrait {
-    border: 1rem solid #2ac04b;
-    width: 336px;
-    height: 448px;
-  }
+}
+
+.portrait {
+  width: 336px;
+  height: 448px;
 }
 
 .biografie {
@@ -114,12 +154,17 @@ div {
   margin: 3% 10% 5% 10%;
 }
 
-.PortfolioPNG {
-  max-width: 100%; /* Bild/Video passt sich Containerbreite an */
-  height: auto;
+.PortfolioPNG img {
   display: block;
-  margin: 0 auto; /* zentriert das Bild/Video */
+  max-width: 100%;
+  height: auto;
   box-shadow: -10px 10px rgba(42, 192, 75, 0.5);
+  margin: 0 auto;
+}
+
+.PortfolioPNG {
+  width: 100%;
+  text-align: center;
 }
 
 video {
