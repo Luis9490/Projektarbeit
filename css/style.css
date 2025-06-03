@@ -25,43 +25,41 @@ body {
   position: fixed;
   width: 100%;
   top: 0%;
-  .NavigationItem {
-    color: black;
-    text-decoration: none;
-    .navH2 {
-      margin: 3%;
-    }
-    white-space: nowrap;
-  }
+  white-space: nowrap;
+}
+.NavigationItem {
+  color: black;
+  text-decoration: none;
+}
+.navH2 {
+  margin: 3%;
 }
 
 /* ------------------------------------------------------Über mich------------------------------------------------------ */
 
-.ueber-mich {
-  div {
-    padding: 0%;
-    .portrait {
-      border: 1rem solid #2ac04b;
-      width: 336px;
-      height: 448px;
-    }
+div {
+  padding: 0%;
+  .portrait {
+    border: 1rem solid #2ac04b;
+    width: 336px;
+    height: 448px;
   }
+}
 
-  .biografie {
-    margin: 0 10%;
+.biografie {
+  margin: 0 10%;
 
-    text-align: left;
-  }
-  .Biografie_h4 {
-    font-weight: normal;
-    margin: 0;
-  }
+  text-align: left;
+}
+.Biografie_h3 {
+  font-weight: normal;
+  margin: 0;
+}
 
-  .Biografie_Text {
-    background-color: #239e3e;
-    padding: 5% 3%;
-    margin-top: 0;
-  }
+.Biografie_Text {
+  background-color: #239e3e;
+  padding: 5% 3%;
+  margin-top: 0;
 }
 
 /* ------------------------------------------------------Fähigkeiten------------------------------------------------------ */
